@@ -1,0 +1,14 @@
+#List the installed extensions
+az extension list
+
+#Install Extension with namegit 
+az extension add --name <extension-name>
+
+#Install Extension with URL or the local path
+#az extension add --source https://contoso.com/anextension-0.0.1-py2.py3-none-any.whl
+#az extension add --source ~/anextension-0.0.1-py2.py3-none-any.whl
+az extension add --source <URL-or-path>
+
+#Uninstall extensions
+az extension remove --name <extension-name>
+

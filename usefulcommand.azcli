@@ -4,6 +4,12 @@ az vm list -d -o table
 #show ip list of VMs
 az vm list-ip-addresses -o table
 
+#list ResourceGroup's items
+az resource list -g hesam-playground -o table
+
+#find ResourceGroup with the filtering
+az resource list -g hesam-playground --query "[?contains(name,'hesam')].name"
+
 #set varibale
 USER=$(az vm show -g QueryDemo -n TestVM --query 'osProfile.adminUsername' -o json)
 echo $USER
