@@ -1,3 +1,13 @@
+#show all VMs status
 az vm list -d -o table
 
+#show ip list of VMs
 az vm list-ip-addresses -o table
+
+#set varibale
+USER=$(az vm show -g QueryDemo -n TestVM --query 'osProfile.adminUsername' -o json)
+echo $USER
+
+#show VM admin user name with sample name
+az vm show -g QueryDemo -n TestVM --query 'osProfile.adminUsername' -o jsonc
+
