@@ -1,6 +1,0 @@
-#vm list
-az vm list -d -o table
-
-#vm network
-az vm list-ip-addresses -o table
-
