@@ -1,0 +1,25 @@
+#List the NICs available on a VM.
+az vm nic list --resource-group MyResourceGroup --vm-name MyVm
+
+#Create a network interface
+az network nic create \
+    --name MyNic \
+    --network-security-group MyNsg \
+    --public-ip-address MyAppGatewayPublicIp \
+    --resource-group MyResourceGroup \
+    --subnet MySubnet \
+    --vnet-name MyVnet
+
+#Create Vnet with sample name
+az network vnet create \
+    --resource-group $RGROUP \
+    --name NorthwindInternal \
+    --address-prefix 10.0.0.0/16 \
+    --subnet-name NorthwindInternal1 \
+    --subnet-prefix 10.0.0.0/24
+
+#open your VM's port 80 for web traffic
+az vm open-port \
+  --port 80 \
+  --resource-group learn-e0345b90-e2c9-4c43-b8a2-fd0b9a65d010 \
+  --name myVM
