@@ -56,3 +56,7 @@ az backup protection backup-now \
     --item-name NW-APP01 \
     --retain-until 18-10-2030 \
     --backup-management-type AzureIaasVM
+
+
+
+  

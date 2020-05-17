@@ -4,6 +4,9 @@ az vm list -d -o table
 #show ip list of VMs
 az vm list-ip-addresses -o table
 
+#list ResourceGroup
+az group list -o table
+
 #list ResourceGroup's items
 az resource list -g hesam-playground -o table
 
