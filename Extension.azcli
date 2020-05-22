@@ -1,7 +1,8 @@
 #VM extension list
 az vm extension
 
-
+#Add extension to VM
+az vm extension set -n AntimalwareConfiguration --publisher Microsoft.Azure.Security.AntimalwareSignature -g hesam-playground --vm-name hh-test-win2k8r2
 
 #List the installed extensions
 az extension list
