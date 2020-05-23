@@ -1,5 +1,5 @@
 az deployment group create \
   --name ExampleDeployment \
   --resource-group ExampleGroup \
-  --template-uri "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-storage-account-create/azuredeploy.json" \
+  --template-uri "https://github.com/hesamoddinh/azurecli/blob/master/ARM/Backup-VM.json" \
   --parameters storageAccountType=Standard_GRS

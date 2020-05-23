@@ -6,7 +6,7 @@
         "value": "hesam-playground"
       },
       "existingVirtualMachines": {
-        "value": "hh-test-win2k8r2"
+        "value": ["hh-test-win2k8r2"]
       },
       "existingRecoveryServicesVault": {
         "value": "hesam-test-RS"
