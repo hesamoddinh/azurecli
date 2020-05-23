@@ -1,0 +1,21 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "existingVirtualMachinesResourceGroup": {
+        "value": "hesam-playground"
+      },
+      "existingVirtualMachines": {
+        "value": "hh-test-win2k8r2"
+      },
+      "existingRecoveryServicesVault": {
+        "value": "hesam-test-RS"
+      },
+      "existingBackupPolicy": {
+        "value": "DefaultPolicy"
+      },
+      "location": {
+        "value": "[resourceGroup().location]"
+      }
+    }
+  }
