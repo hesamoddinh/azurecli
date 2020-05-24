@@ -1,5 +1,5 @@
-az deployment group create \
-  --name ExampleDeployment \
-  --resource-group ExampleGroup \
-  --template-uri "https://github.com/hesamoddinh/azurecli/blob/master/ARM/Backup-VM.json" \
-  --parameters storageAccountType=Standard_GRS
+#deploy backup extension with defaul policy to an existing VM
+az deployment group create --name hesam-test-templateCli \
+    --resource-group hesam-playground \
+    --template-uri https://raw.githubusercontent.com/hesamoddinh/azurecli/master/ARM/Backup-VM.json \
+    --parameters https://raw.githubusercontent.com/hesamoddinh/azurecli/master/ARM/sampleParameter.json
