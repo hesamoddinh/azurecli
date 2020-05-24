@@ -1,5 +1,5 @@
 #deploy backup extension with defaul policy to an existing VM
 az deployment group create --name hesam-test-templateCli \
     --resource-group hesam-playground \
-    --template-uri https://raw.githubusercontent.com/hesamoddinh/azurecli/master/ARM/Backup-VM.json \
-    --parameters https://raw.githubusercontent.com/hesamoddinh/azurecli/master/ARM/sampleParameter.json
+    --template-uri https://raw.githubusercontent.com/hesamoddinh/azurecli/master/ARM/Modules/Backup/backup-VM.json \
+    --parameters https://raw.githubusercontent.com/hesamoddinh/azurecli/master/ARM/Modules/Backup/azuredeploy.parameters.json
